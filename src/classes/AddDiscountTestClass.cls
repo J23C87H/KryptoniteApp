@@ -4,7 +4,7 @@ private class AddDiscountTestClass {
        Accounts__c  a = new Accounts__c  (Name= 'test'); // add more fields, if required
        insert a;
        Opportunities__c o = new Opportunities__c(Name__c=a.Id , quote__c=100);
-       System.debug('Price before inserting new book: ' + o.quote__c);
+       System.debug('Price before inserting new opportunity: ' + o.quote__c);
 
        // Insert Opportunity
        insert o;
