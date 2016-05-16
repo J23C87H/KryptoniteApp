@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AddDiscount</members>
+        <members>AddDiscountTestClass</members>
+        <members>JSON2Apex</members>
+        <members>JSON2ApexTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Kryptonite_LLC</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Accounts__c</members>
+        <members>Opportunities__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Accounts__c-Account Layout New</members>
+        <members>Opportunities__c-Opportunities Layout new</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Accounts__c</members>
+        <members>Opportunities__c</members>
+        <name>Workflow</name>
+    </types>
+    <version>36.0</version>
+</Package>
