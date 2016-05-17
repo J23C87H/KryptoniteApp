@@ -74,12 +74,12 @@
         <description>Amount</description>
         <externalId>false</externalId>
         <label>Amount</label>
-        <precision>18</precision>
+        <length>18</length>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Discounted_Quote__c</fullName>
@@ -88,7 +88,7 @@
         <label>Discounted Quote</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>0</scale>
+        <scale>2</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -98,12 +98,11 @@
         <description>Opportunity ID</description>
         <externalId>false</externalId>
         <label>ID</label>
-        <precision>18</precision>
+        <length>18</length>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -120,6 +119,30 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Prob__c</fullName>
+        <description>Probability converted to percentage data type</description>
+        <externalId>false</externalId>
+        <label>Probability</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>amt__c</fullName>
+        <description>Amount Converted to Currency data type</description>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>created_at__c</fullName>
@@ -145,16 +168,28 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>expectedrevenue__c</fullName>
-        <description>expected revenue</description>
+        <fullName>expectedRev__c</fullName>
+        <description>Expected revenue converted to currency data type</description>
         <externalId>false</externalId>
         <label>Expected Revenue</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>0</scale>
+        <scale>2</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>expectedrevenue__c</fullName>
+        <description>expected revenue</description>
+        <externalId>false</externalId>
+        <label>Expected Revenue</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>forecastcategoryname__c</fullName>
@@ -187,28 +222,40 @@
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>probabliity__c</fullName>
+        <fullName>origQuote__c</fullName>
+        <description>original quote converted to currency data type</description>
+        <externalId>false</externalId>
+        <label>Quote</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>probability__c</fullName>
         <description>probability</description>
         <externalId>false</externalId>
         <label>Probability</label>
-        <precision>18</precision>
+        <length>3</length>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Percent</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>quote__c</fullName>
         <description>quote</description>
         <externalId>false</externalId>
         <label>Quote</label>
-        <precision>18</precision>
+        <length>18</length>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>stagename__c</fullName>

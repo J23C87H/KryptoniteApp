@@ -5,6 +5,7 @@
         <members>AddDiscountTestClass</members>
         <members>JSON2Apex</members>
         <members>JSON2ApexTest</members>
+        <members>ProdUnivParse</members>
         <name>ApexClass</name>
     </types>
     <types>
